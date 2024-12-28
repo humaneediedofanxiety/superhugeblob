@@ -1,0 +1,152 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.main-area {
+  display: flex;
+  margin: 24px 32px;
+}
+
+.container {
+  max-width: 1536px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+#navmenu {
+  width: 40%;
+  min-height: calc(100vh - 48px);
+  padding: 12px 24px;
+  border: 2px solid black;
+  border-right: 0px;
+  display: flex;
+  gap: 16px;
+  flex-direction: column;
+}
+
+#navmenu > div > img {
+  width: 120px;
+}
+
+#navmenu > div > ul {
+  list-style: none;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+#profile {
+  display: flex;
+  gap: 12px;
+  width: 70%;
+}
+
+#profile > p {
+  font-size: 24px;
+}
+
+#sitemap > h3 {
+  font-weight: 500;
+  font-size: 24px;
+  padding-bottom: 8px;
+}
+
+#sitemap > ul > li > a,
+a {
+  color: darkblue;
+}
+
+#sitemap > ul > li > a:hover,
+a:hover {
+  color: red;
+}
+
+#main-image img {
+  width: 400px;
+}
+
+.profile-text-span {
+  font-size: 14px;
+  font-style: italic;
+}
+
+#text-content h1 {
+  font-size: 32px;
+  font-weight: 500;
+  padding-bottom: 8px;
+}
+
+hr {
+  border-color: black;
+}
+
+#text-content p {
+  font-size: 20px;
+  font-weight: normal;
+}
+
+#main-content {
+  width: 60%;
+  padding: 12px 24px;
+  min-height: calc(100vh - 48px);
+  border: 2px solid black;
+}
+
+#main-image {
+  display: flex;
+  padding-top: 124px;
+  justify-content: center;
+  gap: 12px;
+}
+
+#main-image > p {
+  padding-top: 24px;
+  font-size: 16px;
+  font-style: italic;
+}
+
+@media (max-width: 1536px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+/* xl */
+@media (max-width: 1280px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+/* lg */
+@media (max-width: 1024px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+/* md */
+@media (max-width: 768px) {
+  .container {
+    max-width: 640px;
+  }
+}
+
+/* sm */
+@media (max-width: 640px) {
+  .container {
+    max-width: 475px;
+  }
+}
+
+/* xs */
+@media (max-width: 475px) {
+  .container {
+    width: 100%;
+  }
+}
