@@ -99,15 +99,23 @@ hr {
 
 #main-image {
   display: flex;
-  padding-top: 124px;
+  padding-top: 0px;
   justify-content: center;
   gap: 12px;
 }
 
-#main-image > p {
-  padding-top: 24px;
+#main-image > div > p,
+#main-content > p {
+  padding-top: 12px;
   font-size: 16px;
   font-style: italic;
+}
+
+.background-img1 {
+  background-image: url(./resources/21ff978cc927166fde842b8ff217bbf5.jpg);
+  background-size: contain;
+  margin-top: 48px;
+  height: 240px;
 }
 
 @media (max-width: 1536px) {
@@ -119,28 +127,68 @@ hr {
 /* xl */
 @media (max-width: 1280px) {
   .container {
-    max-width: 1024px;
+    max-width: 1200px;
+  }
+
+  #profile {
+    width: 90%;
+  }
+
+  #profile > p {
+    font-size: 22px;
   }
 }
 
 /* lg */
 @media (max-width: 1024px) {
   .container {
-    max-width: 768px;
+    max-width: 968px;
+    #main-image {
+      flex-direction: column;
+    }
+
+    #profile > p {
+      font-size: 20px;
+    }
+
+    #profile {
+      width: 90%;
+    }
   }
 }
 
 /* md */
 @media (max-width: 768px) {
   .container {
-    max-width: 640px;
+    max-width: 768px;
+  }
+
+  #main-content {
+    display: none;
+  }
+
+  #navmenu {
+    width: 100%;
+    border-right: 2px solid black;
+  }
+
+  #profile > p {
+    font-size: 22px;
+  }
+
+  #sitemap > h3 {
+    font-size: 22px;
+  }
+
+  #profile {
+    max-width: 80%;
   }
 }
 
 /* sm */
 @media (max-width: 640px) {
   .container {
-    max-width: 475px;
+    max-width: 640px;
   }
 }
 
@@ -148,5 +196,9 @@ hr {
 @media (max-width: 475px) {
   .container {
     width: 100%;
+  }
+
+  #profile {
+    max-width: 95%;
   }
 }
